@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "LinkedList.c"
 
-struct Node *top=NULL;
 void push(int value){
 	insertAtStart(value);
 }
