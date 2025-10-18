@@ -52,7 +52,7 @@ void removeAtStart(){
 }
 void removeAtEnd(){
 	if(head==NULL){
-		printf("Linked List is empty\n");
+		printf("Underflow\n");
 		return;
 	}
 	struct Node *ptr=head;
@@ -66,7 +66,7 @@ void removeAtEnd(){
 void removeAtPosition(int position){
 	int i;
 	if(head==NULL){
-		printf("Linked list is empty\n");
+		printf("Underflow\n");
 		return;
 	}if(position==0){
 		struct Node *ptr=head;
@@ -86,7 +86,7 @@ void removeAtPosition(int position){
 void display(){
 	struct Node *ptr=head;
 	if(ptr==NULL){
-		printf("Linked list is empty\n");
+		printf("Underflow\n");
 		return;
 	}while(ptr!=NULL){
 		printf("%d->", ptr->data);
